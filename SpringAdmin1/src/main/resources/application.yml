@@ -1,0 +1,28 @@
+
+server:
+  port: 8081
+
+management:
+  endpoint:
+    health:
+      show-details: ALWAYS
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+spring:
+  application:
+    name: SpringAdmin1
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 1200000
+        readTimeout: 1200000
+logging:
+  file:
+    name: /hexapp/logs/ai-admin-serving.log
