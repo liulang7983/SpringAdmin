@@ -60,7 +60,7 @@ public class LogManageController {
         return logManageService.filterLog(id,filterContext);
     }
     /**
-     *  过滤
+     *  获取所有服务
      * @return
      * @throws IOException
      */
